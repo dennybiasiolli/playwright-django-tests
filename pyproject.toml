@@ -1,11 +1,10 @@
 [tool.poetry]
-name = "playwright-tests"
+name = "playwright-django-tests"
 version = "0.1.0"
 description = ""
 authors = ["Denny Biasiolli <dennybiasiolli@users.noreply.github.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "playwright_tests"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
