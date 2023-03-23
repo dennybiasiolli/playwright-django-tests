@@ -93,7 +93,7 @@ class MyViewTests(StaticLiveServerTestCase):
         page.get_by_label("Name:").fill("pineapple")
         page.get_by_role("button", name="Save", exact=True).click()
         expect(
-            page.get_by_text('"pineapple" is not a valid ingredient Name:')
+            page.get_by_text('"pineapple" is not a valid ingredient')
         ).to_be_visible()
 
     def test_pizza_validator(self):
@@ -109,7 +109,5 @@ class MyViewTests(StaticLiveServerTestCase):
         page.get_by_label("Name:").fill("hawaii")
         page.get_by_label("Name:").press("Enter")
         expect(
-            page.get_by_text(
-                '"hawaii" is not a pizza, it\'s a crime against humanity Name:'
-            )
+            page.get_by_text('"hawaii" is not a pizza, it\'s a crime against humanity')
         ).to_be_visible()

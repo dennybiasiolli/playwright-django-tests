@@ -42,13 +42,6 @@ poetry run \
     python manage.py test
 ```
 
-## Running tests
-
-```sh
-poetry run \
-    python manage.py test
-```
-
 ## Generating test code with Playwright
 
 Launch a local Django instance, then from another shell run
